@@ -1,0 +1,14 @@
+---
+application:
+  name: "spooney-discord-bot"
+  project: "spooney"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "spoon"
+routers:
+- name: "main-spooney-discord-bot"
+  routes:
+  - application_name: "spooney-discord-bot"
+    paths:
+    - "/*"
