@@ -1,0 +1,11 @@
+---
+application:
+  name: "spooney-discord-bot"
+  project: "spooney"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-spooney-discord-bot"
+  routes:
+  - application_name: "spooney-discord-bot"
+    paths:
+    - "/*"
