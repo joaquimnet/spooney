@@ -1,11 +1,11 @@
 require("tinv")();
 
-const { PORT } = process.env;
+const PORT = process.env.PORT ?? 3000;
 const { TOKEN } = process.env;
-const { DB_HOST } = process.env;
-const { DB_USER } = process.env;
-const { DB_PASS } = process.env;
-const { DB_DATABASE } = process.env;
+const DB_HOST = process.env.DB_HOST ?? process.env.QOVERY_DATABASE_SPOON_HOST;
+const DB_USER = process.env.DB_USER ?? process.env.QOVERY_DATABASE_SPOON_USERNAME;
+const DB_PASS = process.env.DB_PASS ?? process.env.QOVERY_DATABASE_SPOON_PASSWORD;
+const DB_DATABASE = process.env.DB_DATABASE ?? process.env.QOVERY_DATABASE_SPOON_NAME;
 
 module.exports = {
   PORT,
