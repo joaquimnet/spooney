@@ -1,8 +1,12 @@
 ---
 application:
   name: "spooney-discord-bot"
-  project: "spooney"
+  project: "Spooney"
   organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "spoon"
+  version: "8.0"
 routers:
 - name: "main-spooney-discord-bot"
   routes:
